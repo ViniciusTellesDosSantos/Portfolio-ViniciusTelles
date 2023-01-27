@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfólio - Vinicius Telles</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h3>Hello, world! I am</h3>
+        <h1 class="typing-text"></h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>My name is Vinicius Telles and I am a developer. Currently working with Delphi,
+                in a full-time job, but I am also studying Web Development as a hobbie.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Delphi</li>
+                <li>IBExpert</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <h3>Project 1</h3>
+                    <p>A brief description of the project...</p>
+                    <a href="#">View project</a>
+                </li>
+                <li>
+                    <h3>Project 2</h3>
+                    <p>A brief description of the project...</p>
+                    <a href="#">View project</a>
+                </li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: viniciustelles00@gmail.com</p>
+            <p>Phone: +55 49 98815-6812</p>
+            <p>LinkedIn: https://www.linkedin.com/in/vin%C3%ADciustelles/</p>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2023 - Vinicius Telles</p>
+    </footer>
+</body>
+<script>
+    var string = "Vinicius Telles";
+    var str = string.split("");
+    var el = document.querySelector(".typing-text");
+    (function animate() {
+        str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running);
+        var running = setTimeout(animate, 90);
+    })();
+</script>
+
+</html>
